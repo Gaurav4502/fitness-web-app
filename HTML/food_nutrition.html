@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Nutrition Chart</title>
+    <link rel="stylesheet" href="../CSS/food_nutrition_style.css">
+</head>
+<body>
+    <h1>Food Nutrition Chart</h1>
+    <button id="view-diet-plan" class="primary-button">View Diet Plan</button>
+
+    <h2>Grains & Cereals</h2>
+    <table>
+        <tr>
+            <th>Food Item</th>
+            <th>Protein (g)</th>
+            <th>Calories (kcal)</th>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Rice (White)', '7g', '130 kcal', 'Rice Recipe')">100g Rice (White)</button></td>
+            <td>7g</td>
+            <td>130 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Rice (Brown)', '7g', '111 kcal', 'Brown Rice Recipe')">100g Rice (Brown)</button></td>
+            <td>7g</td>
+            <td>111 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Whole Wheat Flour', '12g', '340 kcal')">100g Whole Wheat Flour</button></td>
+            <td>12g</td>
+            <td>340 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Bajra (Pearl Millet)', '12g', '378 kcal')">100g Bajra (Pearl Millet)</button></td>
+            <td>12g</td>
+            <td>378 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Jowar (Sorghum)', '11g', '329 kcal')">100g Jowar (Sorghum)</button></td>
+            <td>11g</td>
+            <td>329 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Oats', '11g', '389 kcal')">100g Oats</button></td>
+            <td>11g</td>
+            <td>389 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Quinoa', '14g', '368 kcal')">100g Quinoa</button></td>
+            <td>14g</td>
+            <td>368 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Ragi (Finger Millet)', '7g', '336 kcal')">100g Ragi (Finger Millet)</button></td>
+            <td>7g</td>
+            <td>336 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Wheat Bran', '13g', '340 kcal')">100g Wheat Bran</button></td>
+            <td>13g</td>
+            <td>340 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Barley', '12g', '352 kcal')">100g Barley</button></td>
+            <td>12g</td>
+            <td>352 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Maize (Corn)', '9g', '365 kcal')">100g Maize (Corn)</button></td>
+            <td>9g</td>
+            <td>365 kcal</td>
+        </tr>
+    </table>
+
+    <h2>Legumes & Lentils</h2>
+    <table>
+        <tr>
+            <th>Food Item</th>
+            <th>Protein (g)</th>
+            <th>Calories (kcal)</th>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Moong Dal (Green)', '24g', '347 kcal')">100g Moong Dal (Green)</button></td>
+            <td>24g</td>
+            <td>347 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Masoor Dal (Red Lentil)', '25g', '358 kcal')">100g Masoor Dal (Red Lentil)</button></td>
+            <td>25g</td>
+            <td>358 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Toor Dal (Pigeon Pea)', '22g', '343 kcal')">100g Toor Dal (Pigeon Pea)</button></td>
+            <td>22g</td>
+            <td>343 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Urad Dal (Black Lentil)', '25g', '341 kcal')">100g Urad Dal (Black Lentil)</button></td>
+            <td>25g</td>
+            <td>341 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Chana (Chickpeas)', '19g', '364 kcal')">100g Chana (Chickpeas)</button></td>
+            <td>19g</td>
+            <td>364 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Rajma (Kidney Beans)', '24g', '333 kcal')">100g Rajma (Kidney Beans)</button></td>
+            <td>24g</td>
+            <td>333 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Black Chana (Kala Chana)', '20g', '330 kcal')">100g Black Chana (Kala Chana)</button></td>
+            <td>20g</td>
+            <td>330 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Soya Chunks', '52g', '345 kcal')">100g Soya Chunks</button></td>
+            <td>52g</td>
+            <td>345 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Peas (Green)', '5g', '81 kcal')">100g Peas (Green)</button></td>
+            <td>5g</td>
+            <td>81 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Lobia (Black-eyed Peas)', '8g', '340 kcal')">100g Lobia (Black-eyed Peas)</button></td>
+            <td>8g</td>
+            <td>340 kcal</td>
+        </tr>
+    </table>
+
+    <h2>Vegetables</h2>
+    <table>
+        <tr>
+            <th>Food Item</th>
+            <th>Protein (g)</th>
+            <th>Calories (kcal)</th>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Spinach', '3g', '23 kcal')">100g Spinach</button></td>
+            <td>3g</td>
+            <td>23 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Broccoli', '3g', '34 kcal')">100g Broccoli</button></td>
+            <td>3g</td>
+            <td>34 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Cauliflower', '2g', '25 kcal')">100g Cauliflower</button></td>
+            <td>2g</td>
+            <td>25 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Carrot', '1g', '41 kcal')">100g Carrot</button></td>
+            <td>1g</td>
+            <td>41 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Bitter Gourd (Karela)', '1g', '41 kcal')">100g Bitter Gourd (Karela)</button></td>
+            <td>1g</td>
+            <td>41 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Brinjal (Eggplant)', '1g', '25 kcal')">100g Brinjal (Eggplant)</button></td>
+            <td>1g</td>
+            <td>25 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Cucumber', '1g', '16 kcal')">100g Cucumber</button></td>
+            <td>1g</td>
+            <td>16 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Tomato', '1g', '18 kcal')">100g Tomato</button></td>
+            <td>1g</td>
+            <td>18 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Pumpkin', '1g', '26 kcal')">100g Pumpkin</button></td>
+            <td>1g</td>
+            <td>26 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Sweet Potato', '2g', '86 kcal')">100g Sweet Potato</button></td>
+            <td>2g</td>
+            <td>86 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Bottle Gourd (Lauki)', '1g', '20 kcal')">100g Bottle Gourd (Lauki)</button></td>
+            <td>1g</td>
+            <td>20 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Bell Pepper', '1g', '31 kcal')">100g Bell Pepper</button></td>
+            <td>1g</td>
+            <td>31 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Cabbage', '1g', '25 kcal')">100g Cabbage</button></td>
+            <td>1g</td>
+            <td>25 kcal</td>
+        </tr>
+    </table>
+
+    <h2>Fruits</h2>
+    <table>
+        <tr>
+            <th>Food Item</th>
+            <th>Protein (g)</th>
+            <th>Calories (kcal)</th>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Apple', '0.5g', '52 kcal')">100g Apple</button></td>
+            <td>0.5g</td>
+            <td>52 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Banana', '1.3g', '89 kcal')">100g Banana</button></td>
+            <td>1.3g</td>
+            <td>89 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Orange', '0.9g', '47 kcal')">100g Orange</button></td>
+            <td>0.9g</td>
+            <td>47 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Papaya', '0.5g', '43 kcal')">100g Papaya</button></td>
+            <td>0.5g</td>
+            <td>43 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Pomegranate', '1.7g', '83 kcal')">100g Pomegranate</button></td>
+            <td>1.7g</td>
+            <td>83 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Watermelon', '0.6g', '30 kcal')">100g Watermelon</button></td>
+            <td>0.6g</td>
+            <td>30 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Mango', '0.8g', '60 kcal')">100g Mango</button></td>
+            <td>0.8g</td>
+            <td>60 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Guava', '2.6g', '68 kcal')">100g Guava</button></td>
+            <td>2.6g</td>
+            <td>68 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Pineapple', '0.5g', '50 kcal')">100g Pineapple</button></td>
+            <td>0.5g</td>
+            <td>50 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Grapes', '0.7g', '69 kcal')">100g Grapes</button></td>
+            <td>0.7g</td>
+            <td>69 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Avocado', '2g', '160 kcal')">100g Avocado</button></td>
+            <td>2g</td>
+            <td>160 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Kiwi', '2g', '61 kcal')">100g Kiwi</button></td>
+            <td>2g</td>
+            <td>61 kcal</td>
+        </tr>
+    </table>
+
+    <h2>Dairy Products</h2>
+    <table>
+        <tr>
+            <th>Food Item</th>
+            <th>Protein (g)</th>
+            <th>Calories (kcal)</th>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Paneer (Cottage Cheese)', '18g', '265 kcal')">100g Paneer (Cottage Cheese)</button></td>
+            <td>18g</td>
+            <td>265 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('1 cup Milk (Full-fat)', '7g', '150 kcal')">1 cup Milk (Full-fat)</button></td>
+            <td>7g</td>
+            <td>150 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Curd (Dahi)', '8g', '98 kcal')">100g Curd (Dahi)</button></td>
+            <td>8g</td>
+            <td>98 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Yogurt (Greek-style)', '10g', '59 kcal')">100g Yogurt (Greek-style)</button></td>
+            <td>10g</td>
+            <td>59 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Cheese (Cheddar)', '25g', '400 kcal')">100g Cheese (Cheddar)</button></td>
+            <td>25g</td>
+            <td>400 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Buttermilk (Chaas)', '3g', '35 kcal')">100g Buttermilk (Chaas)</button></td>
+            <td>3g</td>
+            <td>35 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('1 Egg (Boiled)', '6g', '77 kcal')">1 Egg (Boiled)</button></td>
+            <td>6g</td>
+            <td>77 kcal</td>
+        </tr>
+    </table>
+
+    <h2>Nuts & Seeds</h2>
+    <table>
+        <tr>
+            <th>Food Item</th>
+            <th>Protein (g)</th>
+            <th>Calories (kcal)</th>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Almonds', '21g', '576 kcal')">100g Almonds</button></td>
+            <td>21g</td>
+            <td>576 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Walnuts', '15g', '654 kcal')">100g Walnuts</button></td>
+            <td>15g</td>
+            <td>654 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Cashews', '18g', '553 kcal')">100g Cashews</button></td>
+            <td>18g</td>
+            <td>553 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Pistachios', '20g', '562 kcal')">100g Pistachios</button></td>
+            <td>20g</td>
+            <td>562 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Sunflower Seeds', '21g', '584 kcal')">100g Sunflower Seeds</button></td>
+            <td>21g</td>
+            <td>584 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Flaxseeds', '18g', '534 kcal')">100g Flaxseeds</button></td>
+            <td>18g</td>
+            <td>534 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Sesame Seeds (Til)', '18g', '573 kcal')">100g Sesame Seeds (Til)</button></td>
+            <td>18g</td>
+            <td>573 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Pumpkin Seeds', '30g', '559 kcal')">100g Pumpkin Seeds</button></td>
+            <td>30g</td>
+            <td>559 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Chia Seeds', '16g', '486 kcal')">100g Chia Seeds</button></td>
+            <td>16g</td>
+            <td>486 kcal</td>
+        </tr>
+    </table>
+
+    <h2>Non-Vegetarian (Meat & Fish)</h2>
+    <table>
+        <tr>
+            <th>Food Item</th>
+            <th>Protein (g)</th>
+            <th>Calories (kcal)</th>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Chicken Breast', '27g', '165 kcal')">100g Chicken Breast</button></td>
+            <td>27g</td>
+            <td>165 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Mutton (Goat Meat)', '25g', '294 kcal')">100g Mutton (Goat Meat)</button></td>
+            <td>25g</td>
+            <td>294 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Fish (Rohu)', '18g', '120 kcal')">100g Fish (Rohu)</button></td>
+            <td>18g</td>
+            <td>120 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Salmon', '22g', '206 kcal')">100g Salmon</button></td>
+            <td>22g</td>
+            <td>206 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Prawns', '19g', '99 kcal')">100g Prawns</button></td>
+            <td>19g</td>
+            <td>99 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Crab Meat', '18g', '90 kcal')">100g Crab Meat</button></td>
+            <td>18g</td>
+            <td>90 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Chicken Liver', '20g', '165 kcal')">100g Chicken Liver</button></td>
+            <td>20g</td>
+            <td>165 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Duck Meat', '27g', '337 kcal')">100g Duck Meat</button></td>
+            <td>27g</td>
+            <td>337 kcal</td>
+        </tr>
+    </table>
+
+    <h2>Miscellaneous</h2>
+    <table>
+        <tr>
+            <th>Food Item</th>
+            <th>Protein (g)</th>
+            <th>Calories (kcal)</th>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Ghee (Clarified Butter)', '0g', '900 kcal')">100g Ghee (Clarified Butter)</button></td>
+            <td>0g</td>
+            <td>900 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('1 tbsp Coconut Oil', '0g', '120 kcal')">1 tbsp Coconut Oil</button></td>
+            <td>0g</td>
+            <td>120 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Coconut (Fresh)', '3g', '354 kcal')">100g Coconut (Fresh)</button></td>
+            <td>3g</td>
+            <td>354 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('1 tbsp Honey', '0g', '64 kcal')">1 tbsp Honey</button></td>
+            <td>0g</td>
+            <td>64 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Tamarind', '2g', '239 kcal')">100g Tamarind</button></td>
+            <td>2g</td>
+            <td>239 kcal</td>
+        </tr>
+        <tr>
+            <td><button class="food-item" onclick="selectFoodItem('100g Jaggery', '0.4g', '383 kcal')">100g Jaggery</button></td>
+            <td>0.4g</td>
+            <td>383 kcal</td>
+        </tr>
+    </table>
+
+    <!-- Modal for customizing serving size -->
+    <div id="serving-size-modal" class="modal">
+        <div class="modal-content">
+            <h2>Customize Serving Size</h2>
+            <p id="selected-food-item"></p>
+            <label for="serving-size">Serving Size (g):</label>
+            <input type="number" id="serving-size" min="1" value="100">
+            <button class="primary-button" onclick="confirmFoodItem()">Add to Diet Plan</button>
+            <button class="secondary-button" onclick="closeServingSizeModal()">Cancel</button>
+        </div>
+    </div>
+
+    <div id="diet-plan-modal" class="modal">
+        <div class="modal-content">
+            <h2>Your Diet Plan</h2>
+            <ul id="diet-plan-list"></ul>
+            <button class="primary-button" onclick="closeDietPlan()">Close</button>
+        </div>
+    </div>
+
+    <!-- Recipe Modal -->
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <h2 id="recipe-title"></h2>
+            <h3>Ingredients</h3>
+            <ul id="recipe-ingredients"></ul>
+            <h3>Cooking Instructions</h3>
+            <p id="recipe-instructions"></p>
+            <h3>Nutrition Facts</h3>
+            <p id="recipe-nutrition"></p>
+            <button class="primary-button" onclick="closeRecipeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="../JS/food_nutrition_script.js"></script>
+</body>
+</html>

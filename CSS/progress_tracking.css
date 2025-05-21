@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Headings */
+h2, h3, h4 {
+    color: #333;
+    text-align: center;
+}
+
+h4 {
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Form Styles */
+form {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Workout History */
+.workout-history {
+    margin-top: 20px;
+}
+
+.workout-group {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 5px solid #007bff;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding-left: 15px;
+}
+
+/* Workout Card */
+.workout-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Set relative positioning for the card */
+}
+
+.workout-card h5 {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.workout-card p {
+    margin: 2px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Delete Button */
+.btn-delete {
+    display: inline-block; /* Prevent full width */
+    width: 100px; /* Set a fixed width */
+    padding: 4px 8px; /* Reduced padding */
+    font-size: 14px; /* Adjust font size */
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    position: absolute; /* Position the button absolutely */
+    top: 50%; /* Center vertically */
+    right: 10px; /* Align to the right corner */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+.btn-delete:hover {
+    background-color: #c82333; /* Darker shade for hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

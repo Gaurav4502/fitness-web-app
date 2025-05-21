@@ -1,0 +1,98 @@
+/* Workout.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.workout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.exercise {
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.exercise h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.exercise p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.exercise img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.exercise img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1em;
+    color: #777;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .exercise {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .exercise {
+        width: 100%;
+    }
+}

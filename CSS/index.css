@@ -1,0 +1,101 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+/* Container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2.5rem;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 1.8rem;
+    font-weight: 600;
+}
+
+/* Button Container */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+/* Buttons */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* User Login Button */
+.btn-user {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+.btn-user:hover {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    transform: scale(1.05);
+}
+
+/* Admin Login Button */
+.btn-admin {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.btn-admin:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 2rem;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+    
+    .btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+}

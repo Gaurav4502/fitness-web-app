@@ -1,0 +1,16 @@
+/* ...existing code... */
+.return-dashboard {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.return-dashboard:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+/* ...existing code... */

@@ -1,0 +1,171 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Updated Body Styling */
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* New Gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Centering Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Login Box */
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px); /* Glassmorphism Effect */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Logo */
+.logo img {
+    width: 100px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+    font-size: 26px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* Input Fields - Aligned & Improved */
+/* Adjust spacing between input fields */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px; /* Adjust this value to change the space */
+}
+
+label {
+    align-self: flex-start;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+/* Input Fields - Modern Look */
+input {
+    width: 90%;
+    max-width: 350px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #4facfe; /* Cool Blue Border */
+    border-radius: 10px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent */
+    color: #fff; /* White Text */
+    transition: all 0.3s ease-in-out;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Placeholder Styling */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Light White Placeholder */
+}
+
+/* Hover Effect */
+input:hover {
+    border-color: #ff6a00;
+    transition: 0.2s ease-in-out;
+}
+
+/* Focus Effect */
+input:focus {
+    border-color: #ff512f;
+    box-shadow: 0px 0px 12px rgba(255, 81, 47, 0.6);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Updated Button Styling */
+button {
+    width: 100%;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: linear-gradient(to right, #ff512f, #ff0062);
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(255, 81, 47, 0.5);
+}
+
+/* Forgot Password */
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    color: #4facfe;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-password:hover {
+    color: #00c3ff;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login-box {
+        width: 90%;
+        padding: 30px;
+    }
+}

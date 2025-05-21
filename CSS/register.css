@@ -1,0 +1,81 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e3a5f;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Form container */
+form {
+    background-color: #2c3e50;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Form heading */
+h2 {
+    text-align: center;
+    color: #f39c12;
+}
+
+/* Form labels */
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Input fields */
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #ecf0f1;
+    color: #333;
+}
+
+/* Removed file input styling */
+
+/* Dietary preferences dropdown */
+select {
+    /* ...existing select styling... */
+}
+
+/* Activity level dropdown */
+select {
+    /* ...existing select styling... */
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+    }
+}

@@ -1,0 +1,144 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #e74c3c;
+    --background-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --border-color: #dee2e6;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --border-radius: 15px;
+    --font-primary: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    color: #343a40;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Day Containers */
+.day-container {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.day-container:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    text-align: center;
+    background: #2980b9;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Section styling */
+section {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: #007bff;
+}
+
+/* Meal List */
+.meal {
+    background: #ecf0f1;
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+}
+
+h3 {
+    color: #e74c3c;
+    font-size: 1.5rem;
+}
+
+strong {
+    color: #007bff;
+}
+
+/* Footer styling */
+footer {
+    background: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid #007bff;
+}
+
+footer nav a {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    section {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}

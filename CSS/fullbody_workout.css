@@ -1,0 +1,84 @@
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Title */
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Workout Card */
+.workout {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(255, 255, 255, 0.2);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.workout:hover {
+    transform: scale(1.05);
+}
+
+/* GIF Image */
+.workout img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    margin-right: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Workout Text */
+.workout-info {
+    flex: 1;
+    text-align: left;
+}
+
+.workout h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.workout p {
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .workout {
+        flex-direction: column;
+        text-align: center;
+    }
+    .workout img {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,423 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #f0f0f0;
+    background-color: #1e293b;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 24px;
+    color: #d1d1d1;
+}
+
+h3 {
+    font-size: 20px;
+    color: #a1a1a1;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2.5rem;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    width: 100%;
+    max-width: 450px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dashboard-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Logout Button */
+.logout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    text-decoration: none;
+    background-color: #ef4444;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.logout:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    transform: scale(1.05);
+    background-color: #dc2626;
+}
+
+.messages-container .logout {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.messages-container .logout:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+.messages-container a {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: background 0.3s ease;
+}
+
+messages-container a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Enhanced Table Styling */
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Enhanced Table Header Contrast */
+th {
+    background: linear-gradient(135deg, #2d3748, #4a5568); /* Professional dark gray gradient */
+    color: #ffffff; /* Ensure high contrast with the background */
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    padding: 15px;
+    cursor: pointer; /* Indicate sortable columns */
+}
+
+th:hover {
+    background: #4a5568;
+}
+
+td {
+    font-size: 14px;
+    color: #e0e0e0;
+    color: #d1d5db;
+}
+
+tr:nth-child(even) td {
+    background: rgba(255, 255, 255, 0.05);
+    background-color: #374151;
+}
+
+/* Enhanced Row Hover Effect */
+tr:hover td {
+    background: rgba(255, 255, 255, 0.15); /* Slightly darker hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for interactivity */
+    transform: scale(1.01); /* Slight scaling effect */
+    transition: all 0.3s ease;
+    background-color: #475569;
+}
+
+/* Add hover effect for table rows */
+table tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Profile Image Styling */
+td img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .dashboard-container {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .logout {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    td img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Enhanced Search Box Styling */
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    padding: 10px 15px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #ffffff;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    background-color: #374151;
+    color: #d1d5db;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    width: 300px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.search-input::placeholder {
+    color: #9ca3af;
+}
+
+.search-button {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-button:hover {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+/* Enhanced Message Input and Button Styling */
+form input[type="text"][name="message"] {
+    width: 80%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"][name="message"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.message-form {
+    display: flex;
+    align-items: center;
+}
+
+.message-input {
+    background-color: #374151;
+    color: #d1d5db;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    width: 200px;
+}
+
+.message-input::placeholder {
+    color: #9ca3af;
+}
+
+.message-button {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.message-button:hover {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+/* Button Feedback */
+form button[name="send_message"] {
+    padding: 12px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form button[name="send_message"]:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+form button[name="send_message"]:active {
+    background: #003d80; /* Darker shade on click */
+    transform: scale(0.98); /* Slightly shrink on click */
+}
+
+/* Enhanced Search Button Styling */
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #0056b3, #007bff);
+    transform: scale(1.05);
+}
+
+/* Messages Container Styling */
+.messages-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #203a43;
+    color: white;
+    overflow-y: auto;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    z-index: 999;
+}
+
+.messages-container.active {
+    display: block;
+}
+
+/* Add responsive design for smaller screens */
+@media (max-width: 768px) {
+    table {
+        display: block; /* Make table scrollable */
+        overflow-x: auto;
+        white-space: nowrap; /* Prevent wrapping of table content */
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    form input[type="text"] {
+        width: 90%;
+    }
+
+    .logout {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
+
+/* Numeric Data Alignment */
+td:nth-child(1), td:nth-child(6) {
+    text-align: center; /* Center-align numeric data */
+}

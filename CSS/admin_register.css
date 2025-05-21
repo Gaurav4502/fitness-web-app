@@ -1,0 +1,96 @@
+/* Full-page dark gradient background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0c111d, #16213e); /* Exact dark theme */
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Centered Registration Form */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensuring everything is centered */
+}
+/* Title: Moved Above */
+h2 {
+    color: white;
+    font-size: 24px; /* Reduced font size */
+    font-weight: bold;
+    margin-bottom: 20px;  /* Space between title and inputs */
+    text-transform: uppercase;
+    align-self: center;  /* Center the title only */
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px; /* Reduced padding */
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 14px; /* Reduced font size */
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Labels */
+label {
+    color: white;
+    font-size: 14px;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin-top: 12px;
+}
+
+/* Register Button */
+button {
+    width: 100%;
+    padding: 12px; /* Reduced padding */
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px; /* Reduced font size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
