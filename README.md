@@ -39,12 +39,9 @@ MySQL (via XAMPP)
 ├── register.php        # Registration Page
 ├── dashboard.php       # User Dashboard
 └── ...other PHP files
+
 ⚙️ Setup Instructions
 Clone the repository
-
-bash
-Copy
-Edit
 git clone https://github.com/yourusername/fitness-app.git
 cd fitness-app
 Start XAMPP
